@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2026 Tech & Cybersecurity Career Fair</title>
+  <title>OCVTS2026 Tech & Cybersecurity Career Fair</title>
 </head>
 
 <body id="top">
     <!--header-->
     <header>
-        <h1>2026 Tech & Cybersecurity Career Fair</h1>
+        <h1>2026 OCVTS Tech & Cybersecurity Career Fair</h1>
         <p>You'll find all the info you need here.</p>
         
         <!-- navigation -->
@@ -22,5 +22,168 @@
         </nav>
         <hr>
     </header>
+    <main>
+        <!-- event details -->
+        <section id="info">
+            <h2>Event Details</h2>
+            <hr>
+            
+            <figure>
+                <img src="aischool-careerfair.png" alt="Career fair hall with recruiters and attendees networking at company booths" width="500">
+                <figcaption>Meet directly with our tech and cybersecurity recruiters.</figcaption>
+            </figure>
+
+            <article>
+                <h3>About the Career Fair</h3>
+                <p>The 2026 OCVTS Tech & Cybersecurity Career Fair connects job seekers and students with industries interested in those who need it. <br> <em>Note: The event will last 3 days with the same schedule each day.</em></p>
+                
+                <aside>
+                    <h3>Information</h3>
+                    <p><strong>Date:</strong> November 14 – 16, 2026 (3-Day Event)</p>
+                    <p><strong>Time:</strong> 9:00 AM – 3:00 PM EST daily (8:00 AM for booth setup)</p>
+                    <p><strong>Location:</strong> Ocean County Vocational-Technical School</p>
+                    <p><strong>Admission:</strong> Free for All Students & Job Seekers</p>
+                </aside>
+
+                <p><strong>Event Description:</strong> Explore career opportunities in network security, web development, IT support, and system administration. Bring copies of your resume.</p>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- schedule -->
+        <section id="schedule">
+            <h2>Event Schedule</h2>
+            <hr>
+
+            <figure>
+                <img src="aischeduleprojectimage.png" alt="Calendar graphic displaying event dates and times" width="500">
+                <figcaption>Event Calendar & Daily Schedule Overview</figcaption>
+            </figure>
+
+            <ul>
+                <li><strong>8:00 AM:</strong> Recruiters arrive & set up</li>
+                <li><strong>9:00 AM:</strong> Doors Open</li>
+                <li><strong>10:30 AM:</strong> Panel for Cybersecurity</li>
+                <li><strong>12:00 PM:</strong> Resume and Portfolio Workshop</li>
+                <li><strong>1:30 PM:</strong> Technical Interviews (Stage)</li>
+                <li><strong>3:00 PM:</strong> Final Networking and Doors close</li>
+            </ul>
+        </section>
+
+        <hr>
+        <!-- registration -->
+        <section id="register">
+            <h2>Registration Form</h2>
+            
+            <form action="#" method="post">
+                
+                <!-- this is for personal stuff -->
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    
+                    <p>
+                        <label for="first-name">First Name:</label><br>
+                        <input type="text" id="first-name" name="first_name" required>
+                    </p>
+                    
+                    <p>
+                        <label for="last-name">Last Name:</label><br>
+                        <input type="text" id="last-name" name="last_name" required>
+                    </p>
+                    
+                    <p>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    
+                    <p>
+                        <label for="cell">Cell Number:</label><br>
+                        <input type="tel" id="cell" name="cell_number">
+                    </p>
+                    
+                    <p>
+                        <label for="dob">DOB:</label><br>
+                        <input type="date" id="dob" name="dob">
+                    </p>
+                </fieldset>
+
+                <!-- this is preferences -->
+                <fieldset>
+                    <legend>Session & Preference Selection</legend>
+
+                    <p>
+                        <label for="experience-level">Experience Level:</label><br>
+                        <select id="experience-level" name="experience_level">
+                            <option value="blank">     </option>
+                            <option value="student">Student / Entry-Level</option>
+                            <option value="mid">Mid-Level Professional</option>
+                            <option value="senior">Senior / Leadership</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="area-interest">Interest Area:</label><br>
+                        <select id="area-interest" name="area_interest">
+                            <option value="blank">     </option>
+                            <option value="cybersecurity">Cybersecurity</option>
+                            <option value="webdev">Web Development</option>
+                            <option value="networking">Networking</option>
+                            <option value="itsupport">IT Support</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label>Attendance:</label><br>
+                        <input type="radio" id="in-person" name="attendance" value="in-person" checked>
+                        <label for="in-person">In-person</label>
+                    </p>
+
+                    <p>
+                        <label for="Prefered Date">Prefered Date:</label><br>
+                        <select id="Prefered Date" name="Prefered Date">
+                            <option value="blank">     </option>
+                            <option value="day1">Nov. 14</option>
+                            <option value="day2">Nov. 15</option>
+                            <option value="day3">Nov. 16</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="event-time">Preferred Time:</label><br>
+                        <input type="time" id="event-time" name="event_time">
+                    </p>
+
+                    <p>
+                        <label for="workshop-pref">(Optional) Workshop Preference:</label><br>
+                        <select id="workshop-pref" name="workshop_preference">
+                            <option value="none">None</option>
+                            <option value="resume">Resume and Portfolio Workshop</option>
+                            <option value="interviews">Technical Interviews Stage</option>
+                            <option value="panel">Cybersecurity Panel</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="special-requests">Special Requests / Type:</label><br>
+                        <textarea id="special-requests" name="special_requests" rows="4" cols="50" placeholder="Enter special requests, accommodations, or notes..."></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">SUBMIT</button>
+                </p>
+
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <p><a href="#top">Back To Top ↑</a></p>
+        <p>Contact: <a href="mailto:ocvts@gmail.com">ocvts@gmail.com</a></p>
+        <p>&copy; 2026 OCVTS Tech & Cybersecurity Career Fair. For Computer Science Class (Project 01). All rights reserved.</p>
+    </footer>
 </body>
 </html>
